@@ -1,0 +1,13 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-auto-rows: 400px;
+	gap: 60px 90px;
+	margin: 70px 0;
+}
+
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
