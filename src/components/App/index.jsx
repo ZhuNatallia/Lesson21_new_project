@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { asyncloadCategoriesAction } from '../store/asyncAction/categories';
 import { asyncloadProductsAction } from '../store/asyncAction/products';
 import ProductsPage from '../pages/ProductsPage';
+import ProductDescriptionPage from '../pages/ProductDescriptionPage';
 
 
 
@@ -26,6 +27,7 @@ function App() {
 				<Route path='/' element={<CategoriesPage />} />
 				<Route path='/category/:category' element={<ProductsPage />} />
 				<Route path='products/all' element={<ProductsPage />} />
+				<Route path='product/:id' element={<ProductDescriptionPage/>} />
 				<Route path='/basket' element={<BasketPage />} />
 				<Route path='*' element={<NotFoundPage />} />
 			</Routes>

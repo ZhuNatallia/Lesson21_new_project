@@ -1,0 +1,29 @@
+.container {
+	max-width: 900px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 350px 1fr;
+	gap: 20px;
+	min-height: 400px;
+}
+.container img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.info {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	gap: 10px;
+}
+.price {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 10px;
+	align-items: center;
+}
+.price button {
+	padding: 5px;
+	background-color: transparent;
+	border: 2px solid black;
+}
