@@ -1,0 +1,32 @@
+.link {
+	padding: 5px 10px;
+	border: 2px solid white;
+	border-radius: 7px;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+    position: relative;
+}
+
+.link[data-count]::after{
+    content:attr(data-count); /* attr функция позволяет считать значение из атрибута */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    min-width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    border-radius:  50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5px;
+}
+
+.active {
+	border: 2px solid rgb(189, 69, 69);
+}
