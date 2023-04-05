@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { productsSearchFilterAction } from '../store/reducer/productsReducer';
+import { productsSearchFilterAction, productsSortFilterAction } from '../store/reducer/productsReducer';
 import s from './style.module.css';
 
 export default function ProductsFilterBar() {
@@ -9,6 +9,7 @@ export default function ProductsFilterBar() {
 		dispatch(productsSearchFilterAction(event.target.value));
 	};
 	const sortOnChange = (event) => {
+		dispatch(productsSortFilterAction(+event.target.value));
 		console.log(event.target.value);
 	}
 	return (

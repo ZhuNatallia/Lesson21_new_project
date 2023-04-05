@@ -7,7 +7,7 @@ export default function CustNavLink({ label, count, ...item }) {
 		[isActive ? s.active : '', s.link].join(' ');
 
 	return (
-		<NavLink data-count={count} className={isActive} {...item}>
+		<NavLink data-count={count || undefined} className={isActive} {...item}>
 			{label}
 		</NavLink>
 	);

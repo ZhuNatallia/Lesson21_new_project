@@ -6,6 +6,7 @@
 	justify-content: space-between;
 	text-align: center;
 	border-radius: 15px;
+	background-color: #f5f5f5;
 }
 
 .item img {
@@ -23,4 +24,14 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.item a{
+	text-decoration: none;
+	color: black;
+}
+
+.price_block{
+	display: flex;
+	gap: 10px;
 }
